@@ -59,16 +59,16 @@ bixby = Robot("bixby", 124312423)
 # : 물리적인 단계에서 보여줌
 print(Robot.__dict__)
 """
-{'__module__': '__main__', 
-'population': 3, 
-'__init__': <function Robot.__init__ at 0x000002292B28F280>, 
-'say_hi': <function Robot.say_hi at 0x000002292B28F310>, 
-'cal_add': <function Robot.cal_add at 0x000002292B28F3A0>, 
-'die': <function Robot.die at 0x000002292B28F430>, 
-'how_many': <classmethod object at 0x000002292B249BE0>, 
-'__dict__': <attribute '__dict__' of 'Robot' objects>, 
-'__weakref__': <attribute '__weakref__' of 'Robot' objects>, 
-'__doc__': None} 
+{'__module__': '__main__',
+'population': 3,
+'__init__': <function Robot.__init__ at 0x000002292B28F280>,
+'say_hi': <function Robot.say_hi at 0x000002292B28F310>,
+'cal_add': <function Robot.cal_add at 0x000002292B28F3A0>,
+'die': <function Robot.die at 0x000002292B28F430>,
+'how_many': <classmethod object at 0x000002292B249BE0>,
+'__dict__': <attribute '__dict__' of 'Robot' objects>,
+'__weakref__': <attribute '__weakref__' of 'Robot' objects>,
+'__doc__': None}
 """
 # Q. say_hi, call_add, die 같은 인스턴스 메서드들이 왜 클래스 네임스페이스에 들어와있는가?
 
@@ -107,21 +107,21 @@ siri.say_hi()  # 서로 동일
 
 print(dir(siri))
 """
-['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', 
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__',
 '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__',
- '__init_subclass__','__le__', '__lt__', '__module__', '__ne__', '__new__', 
- '__reduce__', '__reduce_ex__','__repr__', '__setattr__', '__sizeof__', 
- '__str__', '__subclasshook__', '__weakref__', 'cal_add', 'code', 'die', 
+ '__init_subclass__','__le__', '__lt__', '__module__', '__ne__', '__new__',
+ '__reduce__', '__reduce_ex__','__repr__', '__setattr__', '__sizeof__',
+ '__str__', '__subclasshook__', '__weakref__', 'cal_add', 'code', 'die',
  'how_many', 'name', 'population', 'say_hi']
 """
 
 print(dir(Robot))
 """
 ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__',
- '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', 
- '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', 
- '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', 
- '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 
+ '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__',
+ '__init__', '__init_subclass__', '__le__', '__lt__', '__module__',
+ '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__',
+ '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__',
  'cal_add', 'die', 'how_many', 'population', 'say_hi']
 """
 
